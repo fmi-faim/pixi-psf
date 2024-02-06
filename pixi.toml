@@ -1,0 +1,21 @@
+[project]
+name = "pixi-psf"
+version = "0.1.0"
+description = "Pixi project to run napari-psf-analysis"
+authors = ["Jan Eglinger <jan.eglinger@fmi.ch>"]
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[tasks]
+psf = "python -m napari"
+
+[dependencies]
+napari = ">=0.4.19,<0.5"
+aicsimageio = ">=4.10.0,<4.11"
+pyqt = ">=5.15.9,<5.16"
+openjdk = ">=21.0.2,<21.1"
+bioformats_jar = ">=2020.5.27,<2020.6"
+napari-aicsimageio = ">=0.7.2,<0.8"
+
+[pypi-dependencies]
+napari-psf-analysis = "*"
